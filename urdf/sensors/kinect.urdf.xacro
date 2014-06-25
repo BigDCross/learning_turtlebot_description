@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="sensor_kinect" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_gazebo.urdf.xacro"/>
-  <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_properties.urdf.xacro"/>
+  <xacro:include filename="$(find learning_turtlebot_description)/urdf/turtlebot_gazebo.urdf.xacro"/>
+  <xacro:include filename="$(find learning_turtlebot_description)/urdf/turtlebot_properties.urdf.xacro"/>
   
   <!-- Parameterised in part by the values in turtlebot_properties.urdf.xacro -->
   <xacro:macro name="sensor_kinect" params="parent">
@@ -43,7 +43,7 @@
     <visual>
      <origin xyz="0 0 0" rpy="0 0 ${M_PI/2}"/>
       <geometry>
-       <mesh filename="package://turtlebot_description/meshes/sensors/kinect.dae"/>
+       <mesh filename="package://learning_turtlebot_description/meshes/sensors/kinect.dae"/>
       </geometry>
     </visual>
 	  <collision>
